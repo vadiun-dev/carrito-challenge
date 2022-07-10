@@ -5,14 +5,17 @@
 html {
   height: 100%;
 }
+
 body {
   min-height: 100%;
   height: 100%;
 }
+
 #root {
   min-height: 100%;
   height: 100%;
 }
+
 p,
 span,
 h1,
@@ -21,4 +24,124 @@ h3,
 h4,
 h5 {
   color: white;
+}
+
+.prod-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.prod-list__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  border: 1px solid #383633;
+  background-color: #44403c;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+}
+
+.prod-list__card:hover {
+  border: 1px solid #7e0c7e;
+}
+
+.prod-list__card__top {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5% 0 5% 0;
+}
+
+.prod-list__card__top__price {
+  width: 40%;
+  height: 30px;
+  border: 1px solid #009d39;
+  border-radius: 16px;
+  margin-right: 3%;
+  background-color: #5dcc0e;
+  text-align: center;
+  color: aliceblue;
+}
+
+.prod-list__card__img {
+  
+  width: 30%;
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+.prod-list__card__text {
+  width: 85%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.prod-list__card__text__title {
+  margin: 2px 0 15px 8px;
+}
+
+.prod-list__card__text__description {
+  color: #686161;
+  margin-left: 8px;
+}
+
+.prod-list__card__button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.prod-list__card__button__agregar {
+  width: 78%;
+  height: 30px;
+  border: 1px solid #38112e;
+  border-radius: 16px;
+  background-color: #77185f;
+  color: aliceblue;
+}
+
+.prod-list__card__button__agregar:hover {
+  color: antiquewhite;
+  transform: scale(1.08);
+}
+
+.cart__button {
+  width: 20%;
+  color: aliceblue;
+  border: 1px solid #38112e;
+  border-radius: 16px;
+  background-color: #77185f;
+}
+
+.cart__button:hover {
+  transform: scale(1.05);
+}
+
+.cart__list__item {
+  border: 1px solid #383633;
+  background-color: #44403c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 2px solid #686161;
+}
+
+.cart__list__item__icon {
+  margin-left: 5px;
+}
+
+.cart__list__item__del {
+  margin-right: 15px;
+  color: #8c8487;
 }
