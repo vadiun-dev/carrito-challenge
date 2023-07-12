@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ProductoCard } from "./product/Product";
 
 const listStyle = {
-  list: "flex flex-wrap w-full justify-start gap-4",
+  list: "flex flex-wrap w-full justify-center sm:justify-start gap-4",
 };
 
 export const ListadoProductosComponent = () => {
@@ -17,8 +17,8 @@ export const ListadoProductosComponent = () => {
   }, []);
   return (
     <div className={listStyle.list}>
-      {products.map((p: Product) => (
-        <ProductoCard product={p} />
+      {products.map((product: Product) => (
+        <ProductoCard key={product.id} product={product} />
       ))}
     </div>
   );
